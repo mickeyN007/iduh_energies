@@ -27,7 +27,7 @@ const Services = (props) => {
 	const services = servicesArr.map((service, i) => {
 		const { name, img } = service
 		return (
-			<div className='team-member'>
+			<div className='team-member' key={i}>
 				<div className='team-image'>
 					<img src={img} className='img' />
 				</div>

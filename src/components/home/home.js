@@ -76,6 +76,10 @@ const Home = () => {
 
 const styles = {
 	img: {
+		position: 'absolute',
+		margin: 0,
+		top: 0, right: 0, bottom: 0,
+
 		filter: 'brightness(5%)',
 		zIndex: -1
 	}
