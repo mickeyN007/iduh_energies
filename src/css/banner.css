@@ -1,0 +1,13 @@
+.bannerContainer {
+	position: relative;
+	height: 80vh;
+}
+
+.bannerHeader {
+	position: absolute;
+	top: 30vh;
+	z-index: 20;
+	font-size: 5rem;
+	color: #fff;
+	left: 5vw;
+}

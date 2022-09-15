@@ -1,0 +1,102 @@
+.f-main {
+	padding-top: 2vh;
+	width: 100vw;
+	background: var(--black);
+}
+
+.f-container {
+	width: 90vw;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rowb {
+	display: flex;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+}
+
+.sub-header {
+	font-size: 1.2em;
+	padding-bottom: 1vh;
+	color: var(--colorb);
+}
+
+.f-link {
+	text-decoration: none;
+	color: white;
+}
+
+.f-link:hover {
+	color: var(--colorb)
+}
+
+.icon {
+	background: white;
+	height: 30px;
+	width: 30px;
+	margin-right: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.s-links {
+	text-decoration: none;
+}
+
+.line {
+	width: 100%;
+	background: var(--colorb);
+	border-style: solid;
+  border-width: thin;
+	border-color: var(--colorb);
+	margin-top: 3vh;
+	margin-bottom: 1vh;
+}
+
+.f-logoContainer {
+	width: 150px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.f-logo {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.center {
+	flex: 1;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+@media only screen and (max-width: 1033px) {
+}
+
+@media only screen and (max-width: 768px) {
+	.row {
+		flex-direction: column;
+	}
+	.rowb {
+		flex-direction: row;
+	}
+
+
+	.sub-header {
+		padding-top: 3vh;
+	}
+
+}

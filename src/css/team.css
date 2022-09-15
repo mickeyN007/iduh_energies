@@ -1,0 +1,21 @@
+.teams-images {
+	display: flex;
+	justify-content: space-around;
+}
+
+.team-member {
+}
+.team-image {
+	width: 300px;
+}
+.team-info {
+	text-align: center;
+}
+.team-name {
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.team-title {
+	color: var(--orange);
+	font-size: 1.5rem;
+}
