@@ -26,7 +26,7 @@ const Team = (props) => {
 	const teams = teamsArr.map((team, i) => {
 		const { name, title, img } = team
 		return (
-			<div className='team-member'>
+			<div className='team-member' key={i}>
 				<div className='team-image'>
 					<img src={img} className='img' />
 				</div>
@@ -40,7 +40,7 @@ const Team = (props) => {
 	return(
 		<div className='section'>
 			<div className='title-3'>Meet Our Team of Experts</div>
-			<div className='teams-images'>{teams}</div>
+			<div className='scroller'>{teams}</div>
 		</div>
 	)
 }

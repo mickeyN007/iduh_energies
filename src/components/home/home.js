@@ -18,9 +18,10 @@ import engineer from '../../images/engineer.jpg'
 const Home = () => {
 	const ref = useRef();
 	const inViewport = CheckIfInView(ref, '0px'); // Trigger as soon as the element becomes visible
+	console.log(inViewport, 'ddd')
 	return (
 		<div className='container'>
-			<Header />
+			<Header inViewport={inViewport} />
 
 			<div ref={ref} className='bannerContainer'>
 				<div className='bannerHeader'>
@@ -34,16 +35,16 @@ const Home = () => {
 			<div className='section'>
 				<div className='title-2'>OUR EXPERTISE</div>
 				<div className='col-2'>
-					<div style={{width: '40%'}}>
+					<div className='col-2-a'>
 						<div className='title-3' style={{paddingBottom: '2rem'}}>
 							Why People Choose Us
 						</div>
 						<div className='p'>
-							We develop innovative, efficient, and sustainable exploration and
+							We develop innovative, efficient and sustainable exploration and
 							production solutions that respond to our future energy challenges.
 						</div>
 					</div>
-					<div style={{flex: 2}}>
+					<div className='col-2-b'>
 						<img src={trust} className='img' />
 					</div>
 				</div>
@@ -51,9 +52,9 @@ const Home = () => {
 
 			<div className='section'>
 				<div className='col-2'>
-					<div style={{width: '40%'}}>
+					<div className='col-2-a'>
 						<div className='title-3' style={{paddingBottom: '2rem'}}>
-							Iduh Energies is a forward thiking company
+							Iduh Energies is a forward thinking company
 						</div>
 						<div className='p'>
 							We help companies create and improve
@@ -61,14 +62,14 @@ const Home = () => {
 							mutually rewarding relationships.
 						</div>
 					</div>
-					<div style={{flex: 2}}>
+					<div className='col-2-b'>
 						<img src={engineer} className='img' />
 					</div>
 				</div>
 			</div>
 
-			<Team />
 			<Services />
+			<Team />
 			<Footer />
 		</div>
 	)

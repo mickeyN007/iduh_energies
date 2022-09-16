@@ -45,9 +45,10 @@ const Services = (props) => {
 					Our mission is to deliver cleaner energy & sustain
 					Nigeria's energy needs as we transition to <br /> Net Zero.
 				</div>
-				<div className='teams-images'>{services}</div>
+				<div className='scroller'>{services}</div>
 			</div>
 			<img src={bg2} className='img' style={styles.img} />
+			<div style={styles.imgg}></div>
 		</div>
 	)
 }
@@ -59,8 +60,17 @@ const styles = {
 		top: 0, right: 0, bottom: 0,
 		zIndex: -1,
 		filter: 'brightness(40%)',
-		background: 'blue'
+	},
+	imgg: {
+		position: 'absolute',
+		margin: 0,
+		top: 0, right: 0, bottom: 0,
+		zIndex: -1,
+		width: '100%',
+		opacity: 0.3,
+		backgroundColor: mySettings.blue
 	}
+
 }
 
 export default Services;

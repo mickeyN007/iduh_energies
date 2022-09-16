@@ -19,6 +19,9 @@ export default class Header extends Component {
 		}
 	}
 	render() {
+		const { inViewport } = this.props
+		console.log(inViewport)
+		var color = !inViewport ? {color: 'black'}: null
 		return (
 			<div className="h-container">
 				<div className="h-subCon">
@@ -26,10 +29,10 @@ export default class Header extends Component {
 					<img src={logo} style={{height: '100%', width: '100%', objectFit: 'contain'}}/>
 				</Link>
 				<div className="links">
-					<Link to='/about' className="link">ABOUT US</Link>
-					<Link to='/contact' className="link">PRICING</Link>
-					<Link to='/offer' className="link">OUR TEAM</Link>
-					<Link to='/offer' className="link">CONTACT US</Link>
+					<Link to='/about' className="link" style={color}>ABOUT US</Link>
+					<Link to='/contact' className="link" style={color}>PRICING</Link>
+					<Link to='/offer' className="link" style={color}>OUR TEAM</Link>
+					<Link to='/offer' className="link" style={color}>CONTACT US</Link>
 				</div>
 				<div className="menu-btn" onClick={this.toggleMenu.bind(this)}>
 						<div className="stroke"></div>

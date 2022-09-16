@@ -7,7 +7,23 @@
 	position: absolute;
 	top: 30vh;
 	z-index: 20;
-	font-size: 5rem;
+	font-size: 6.5rem;
+	font-weight: bold;
 	color: #fff;
 	left: 5vw;
 }
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+	.bannerHeader {
+		font-size: 4rem;
+	}
+	.bannerContainer {
+		height: 60vh;
+	}
+
+}
+
+

@@ -5,8 +5,10 @@ let aData = {
 
 
 export const mySettings = {
-	color: '##4A235A',
-	colorb: '#fac1aa',
+	orange: '#EA6B01',
+	blue: '#3D85BB',
+	green: '#3B8117',
+
   // serverID: 'http://192.168.1.3:5000/',
    //serverID: 'http://192.168.8.106:5000/',
    //serverID: 'https://trent-realtors-server.herokuapp.com/',
