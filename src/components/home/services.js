@@ -8,27 +8,27 @@ import { mySettings } from './../../settings.js'
 const Services = (props) => {
 	const servicesArr = [
 		{
-			name: "Sustainable Ennergy",
-			img: require('../../images/avatar.jpg')
+			name: "Sustainable Energy",
+			img: require('../../images/sustainableEnergy.png')
 		},
 		{
 			name: "Drilling",
-			img: require('../../images/avatar.jpg')
+			img: require('../../images/oil-drill.png')
 		},
 		{
-			name: "Sustainable Ennergy",
-			img: require('../../images/avatar.jpg')
+			name: "Completions",
+			img: require('../../images/completions.png')
 		},
 		{
-			name: "Drilling",
-			img: require('../../images/avatar.jpg')
+			name: "Geoscience Research",
+			img: require('../../images/worker.png')
 		}
 	]
 	const services = servicesArr.map((service, i) => {
 		const { name, img } = service
 		return (
-			<div className='team-member' key={i}>
-				<div className='team-image'>
+			<div className='service' key={i}>
+				<div className='service-image'>
 					<img src={img} className='img' />
 				</div>
 				<div className='team-info'>

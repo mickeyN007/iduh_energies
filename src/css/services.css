@@ -2,8 +2,11 @@
 	position: relative;
 }
 
-.short {
-	width: 45%;
-	color: white;
-	line-height: 4rem;
+.service {
+	display: flex;
+	flex-direction: column;
 }
+.service-image {
+	width: 200px;
+}
+

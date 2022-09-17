@@ -21,9 +21,9 @@ export default class Header extends Component {
 	render() {
 		const { inViewport } = this.props
 		console.log(inViewport)
-		var color = !inViewport ? {color: 'black'}: null
+		var color = !inViewport ? {color: 'black', backgroundColor: 'white'}: null
 		return (
-			<div className="h-container">
+			<div className="h-container" style={color}>
 				<div className="h-subCon">
 				<Link to='/' className="logoContainer">
 					<img src={logo} style={{height: '100%', width: '100%', objectFit: 'contain'}}/>

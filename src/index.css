@@ -59,8 +59,22 @@ code {
 	padding-top: 1rem;
 }
 
+.title-2a {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: white;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+
 .title-3 {
 	font-size: 3rem;
+	font-weight: bold;
+	padding-bottom: 3rem;
+}
+
+.title-4 {
+	font-size: 4rem;
 	font-weight: bold;
 	padding-bottom: 3rem;
 }
@@ -85,6 +99,71 @@ code {
 
 .col-2-b {
 	flex: 2
+}
+
+.logoContainer {
+	width: 300px;
+}
+
+.btn-label {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: white;
+}
+
+.btn {
+	border-radius: 10px;
+	align-items: center;
+	justify-content: center;
+	width: 20vw;
+	height: 10vh;
+	display: flex;
+	background-color: var(--orange);
+}
+
+.footer-logo {
+  width: 17rem;
+	margin-bottom: 3rem;
+}
+
+.long {
+	width: 60%;
+	color: white;
+	line-height: 4rem;
+}
+
+ul {
+  list-style: none;
+	padding-inline-start: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+  cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+.mid {
+	width: 60%;
+	color: white;
+	line-height: 4rem;
+}
+
+.short {
+	width: 45%;
+	color: white;
+	line-height: 4rem;
+}
+
+.footer-mission {
+	color: white;
+	font-size: 1.7rem;
+	font-weight: bold;
+	line-height: 2.5rem;
 }
 
 .scroller {
@@ -133,6 +212,15 @@ code {
 		padding-top: 1rem;
 	}
 
+	.mid {
+		width: 50%;
+	}
+
+	.short {
+		width: 45%;
+		color: white;
+		line-height: 4rem;
+	}
 	.title-3 {
 		font-size: 3rem;
 		font-weight: bold;
@@ -143,6 +231,12 @@ code {
 		font-size: 2.3rem;
 		font-weight: lighter;
 		line-height: 3rem;
+	}
+
+	.logoContainer {
+		width: 150px;
+		display: flex;
+		object-fit: contain;
 	}
 }
 

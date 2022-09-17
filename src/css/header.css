@@ -34,10 +34,6 @@
 	color: var(--colorb);
 }
 
-.logoContainer {
-	width: 300px;
-}
-
 .misc {
 	display: flex;
 	justify-content: space-between;
@@ -95,11 +91,6 @@
 		display: none;
 	}
 
-	.logoContainer {
-		width: 150px;
-		display: flex;
-		object-fit: contain;
-	}
 	.menu-btn {
 		display: flex;
 		flex-direction: column;
