@@ -1,16 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+
 import { IconContext } from "react-icons";
-import {
-	AiFillFacebook,
-	AiFillInstagram,
-	AiFillTwitterSquare
-} from 'react-icons/ai'
+import { FaPhone, FaLocationArrow } from 'react-icons/fa'
+import { MdEmail, MdLocationOn } from 'react-icons/md'
 
-import { mySettings } from './../../settings.js'
 
-//import './../../css/footer.css'
-//import d from './../../images/logo.png'
+import { mySettings } from '../../settings.js'
 
 import './../../css/services.css'
 import './../../css/footer.css'
@@ -22,12 +18,13 @@ export default class Footer extends Component {
 	constructor() {
 		super()
 		this.state = {
-			email: ''
+			email: '',
+			emailF: ''
 		}
 	}
 	render() {
 		const addy = `https://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003`
-		const { email } = this.state
+		const { email, emailF } = this.state
 		let date = new Date().getFullYear()
 		return (
 			<div>
@@ -40,8 +37,9 @@ export default class Footer extends Component {
 						</div>
 						<div className='subscribe-form'>
 							<input
-								className='input-txt title-2'
+								className='input-txt title-2a'
 								type="text"
+								style={{color: 'black'}}
 								onChange={(e) => this.setState({email: e.target.value})}
 								value={email}
 								placeholder='Enter your email'
@@ -62,7 +60,7 @@ export default class Footer extends Component {
 							</Link>
 							<div className='footer-mission'>
 								Our mission is to deliver cleaner energy & sustain
-								Nigeria's energy needs as we transition to <br /> Net Zero.
+								Nigeria's energy needs as we transition to Net Zero.
 							</div>
 							<div className="social-icons">
 								<a href="#" className="link">
@@ -84,14 +82,47 @@ export default class Footer extends Component {
 								</p>
 							</div>
 						</div>
-						<div classame='col'>
-							<div>Contact Us</div>
-							<div>
+						<div className='col footer-contact'>
+							<div className='sub-header'>Contact Us</div>
+							<div style={{display: 'flex', flexDirection: 'row', marginTop: '5%'}}>
+								<div className='footer-icon'>
+									<IconContext.Provider value={{fontWeight: 'bold',  size: '1.5em', color: "black" }}>
+										<MdEmail />
+									</IconContext.Provider>
+								</div>
+								<a className='footer-info white' href="mailto:info@iduhenergies.com">info@iduhenergies.com</a>
+							</div>
+								<div style={{display: 'flex', flexDirection: 'row', marginTop: '5%'}}>
+								<div className='footer-icon'>
+									<IconContext.Provider value={{fontWeight: 'bold',  size: '1.5em', color: "black" }}>
+										<FaPhone />
+									</IconContext.Provider>
+								</div>
+								<a className='footer-info white' href="tel:5551234567" >08123456789</a>
+							</div>
+							<div style={{display: 'flex', flexDirection: 'row', marginTop: '5%'}}>
+								<div className='footer-icon'>
+									<IconContext.Provider value={{fontWeight: 'bold',  size: '1.5em', color: "black" }}>
+										<FaLocationArrow />
+									</IconContext.Provider>
+								</div>
+								<a className='footer-info white' href="mailto:info@houseofhairs.com">Abuja, Nigeria</a>
 							</div>
 						</div>
-						<div classame='col'>
-							<div>Subscribe</div>
-							<div>
+						<div classame='footer-col'>
+							<div className='sub-header'>Subscribe</div>
+							<div className='subscribe-form'>
+								<input
+									className='input-txt-sm title-2a'
+									type="text"
+									style={{color: 'black'}}
+									onChange={(e) => this.setState({emailF: e.target.value})}
+									value={emailF}
+									placeholder='Enter your email'
+								/>
+								<div className='btn btn-label' onClick={this.subscribe.bind(this)}>
+									SUBSCRIBE
+								</div>
 							</div>
 						</div>
 					</div>

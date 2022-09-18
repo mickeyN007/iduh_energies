@@ -29,10 +29,10 @@ export default class Header extends Component {
 					<img src={logo} style={{height: '100%', width: '100%', objectFit: 'contain'}}/>
 				</Link>
 				<div className="links">
-					<Link to='/about' className="link" style={color}>ABOUT US</Link>
-					<Link to='/contact' className="link" style={color}>PRICING</Link>
-					<Link to='/offer' className="link" style={color}>OUR TEAM</Link>
-					<Link to='/offer' className="link" style={color}>CONTACT US</Link>
+					<Link to='' className="link" style={color}>ABOUT US</Link>
+					<Link to='' className="link" style={color}>PRICING</Link>
+					<Link to='' className="link" style={color}>OUR TEAM</Link>
+					<Link to='' className="link" style={color}>CONTACT US</Link>
 				</div>
 				<div className="menu-btn" onClick={this.toggleMenu.bind(this)}>
 						<div className="stroke"></div>

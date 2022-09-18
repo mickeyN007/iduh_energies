@@ -12,7 +12,7 @@ import Services from './services.js'
 import { mySettings } from './../../settings.js'
 
 import bg1 from '../../images/bg1.jpg'
-import trust from '../../images/trust.png'
+import trust from '../../images/trust.jpg'
 import engineer from '../../images/engineer.jpg'
 
 const Home = () => {

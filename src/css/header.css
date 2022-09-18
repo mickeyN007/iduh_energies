@@ -30,9 +30,6 @@
 	color: white;
 }
 
-.link:hover {
-	color: var(--colorb);
-}
 
 .misc {
 	display: flex;

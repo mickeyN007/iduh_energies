@@ -51,6 +51,10 @@ code {
 	padding-bottom: 1rem;
 }
 
+.white {
+	color: white;
+}
+
 .title-2 {
 	font-size: 2rem;
 	font-weight: bold;
