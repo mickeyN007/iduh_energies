@@ -26,7 +26,7 @@ code {
 
 @font-face {
   font-family: 'Antipasto';
-  src: local('Antipasto'), url(./fonts/Antipasto.ttf) format('ttf');
+  src: local('Antipasto'), url(./fonts/AntipastoPro-Bold_trial.ttf) format('ttf');
 }
 
 .img {
@@ -107,6 +107,7 @@ code {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .col-2-a {
@@ -118,11 +119,17 @@ code {
 }
 
 .logoContainer {
-	width: 300px;
+	width: 250px;
 }
 
 .btn-label {
 	font-size: 1.8rem;
+	font-weight: bold;
+	color: white;
+}
+
+.btn-label-sm {
+	font-size: 1.3rem;
 	font-weight: bold;
 	color: white;
 }
@@ -135,6 +142,12 @@ code {
 	height: 10vh;
 	display: flex;
 	background-color: var(--orange);
+}
+
+.btn-sm {
+	border-radius: 8px;
+	width: 16vw;
+	height: 8vh;
 }
 
 .footer-logo {
@@ -177,7 +190,7 @@ a {
 
 .footer-mission {
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: bold;
 	line-height: 2.5rem;
 }

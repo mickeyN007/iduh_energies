@@ -6,6 +6,7 @@
 		align-items: center;
 		position: fixed;
 		z-index: 9999999999;
+		background: white;
 	}
 
 .h-subCon {
@@ -27,7 +28,7 @@
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 1.3em;
-	color: white;
+	color: black;
 }
 
 

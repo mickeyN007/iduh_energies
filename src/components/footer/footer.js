@@ -120,7 +120,7 @@ export default class Footer extends Component {
 									value={emailF}
 									placeholder='Enter your email'
 								/>
-								<div className='btn btn-label' onClick={this.subscribe.bind(this)}>
+								<div className='btn btn-sm btn-label-sm' onClick={this.subscribe.bind(this)}>
 									SUBSCRIBE
 								</div>
 							</div>
