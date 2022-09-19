@@ -7,21 +7,15 @@ import { mySettings } from './../../settings.js'
 const Team = (props) => {
 	const teamsArr = [
 		{
-			name: "Samuel Iduh",
-			title: "CEO",
+			name: "Chief Peter E Iduh",
+			title: "Founder and Chairman Emeritus",
 			img: require('../../images/avatar.jpg')
 		},
 		{
 			name: "Samuel Iduh",
-			title: "CEO",
-			img: require('../../images/avatar.jpg')
-		},
-		{
-			name: "Samuel Iduh",
-			title: "CEO",
+			title: "Chairman and CEO",
 			img: require('../../images/avatar.jpg')
 		}
-
 	]
 	const teams = teamsArr.map((team, i) => {
 		const { name, title, img } = team

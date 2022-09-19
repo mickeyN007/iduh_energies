@@ -18,15 +18,14 @@ import engineer from '../../images/engineer.jpg'
 const Home = () => {
 	const ref = useRef();
 	const inViewport = CheckIfInView(ref, '0px'); // Trigger as soon as the element becomes visible
-	console.log(inViewport, 'ddd')
 	return (
 		<div className='container'>
 			<Header inViewport={inViewport} />
 
 			<div ref={ref} className='bannerContainer'>
 				<div className='bannerHeader'>
-					<div>Discover Our Energy</div>
-					<div>For The New Age</div>
+					<div style={{fontFamily: 'Antipasto'}}>Discover Our Energy</div>
+					<div style={{fontFamily: 'Antipasto'}}>For The New Age</div>
 					<div className='small-font'>Iduh Energies is meeting worldwide demand for energy while preparing for the future</div>
 				</div>
 				<img src={bg1} className='img' style={styles.img} />

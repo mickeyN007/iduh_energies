@@ -39,14 +39,14 @@ const Services = (props) => {
 	})
 	return(
 		<div className='services'>
-			<div style={{zIdex: 999999}} className='section'>
+			<div style={{zIdex: 999999}} className='section t'>
 				<div className='title-2'>OUR SERVICES</div>
 				<div className='title-3 short'>
 					Our mission is to deliver cleaner energy & sustain
-					Nigeria's energy needs as we transition to <br /> Net Zero.
+					Nigeria's energy needs as we transition to Net Zero.
 				</div>
-				<div className='scroller'>{services}</div>
 			</div>
+			<div className='sc'>{services}</div>
 			<img src={bg2} className='img' style={styles.img} />
 			<div style={styles.imgg}></div>
 		</div>

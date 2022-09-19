@@ -24,6 +24,11 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: 'Antipasto';
+  src: local('Antipasto'), url(./fonts/Antipasto.ttf) format('ttf');
+}
+
 .img {
 	height: 100%;
 	width: 100%;
@@ -97,6 +102,13 @@ code {
 	padding-bottom: 3vw;
 }
 
+.t {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .col-2-a {
 	width: 48%;
 }
@@ -165,15 +177,24 @@ a {
 
 .footer-mission {
 	color: white;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	line-height: 2.5rem;
 }
 
 .scroller {
 	display: flex;
-	width: 100%;
+	width: 70%;
+	margin: auto;
 	justify-content: space-around;
+}
+
+.sc {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	justify-content: space-around;
+	padding-bottom: 3vw;
 }
 
 @media only screen and (max-width: 1200px) {

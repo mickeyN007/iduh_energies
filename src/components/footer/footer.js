@@ -37,7 +37,7 @@ export default class Footer extends Component {
 						</div>
 						<div className='subscribe-form'>
 							<input
-								className='input-txt title-2a'
+								className='input-txt title-1a'
 								type="text"
 								style={{color: 'black'}}
 								onChange={(e) => this.setState({email: e.target.value})}
@@ -113,7 +113,7 @@ export default class Footer extends Component {
 							<div className='sub-header'>Subscribe</div>
 							<div className='subscribe-form'>
 								<input
-									className='input-txt-sm title-2a'
+									className='input-txt-sm title-1a'
 									type="text"
 									style={{color: 'black'}}
 									onChange={(e) => this.setState({emailF: e.target.value})}
