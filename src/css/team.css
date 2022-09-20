@@ -18,7 +18,21 @@
 	font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 618px) {
+@media only screen and (max-width: 768px) {
+	.team-name {
+		font-size: 1.3rem;
+		font-weight: bold;
+	}
+	.team-title {
+		font-size: 1rem;
+	}
+	.team-member {
+		flex-wrap: nowrap;
+	}
+	.scroller {
+		overflow: scroll;
+	}
+
 }
 
 

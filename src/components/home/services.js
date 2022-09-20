@@ -31,8 +31,8 @@ const Services = (props) => {
 				<div className='service-image'>
 					<img src={img} className='img' />
 				</div>
-				<div className='team-info'>
-					<div className='team-name' style={{color: 'white'}}>{name}</div>
+				<div className='service-info'>
+					<div className='service-name' style={{color: 'white'}}>{name}</div>
 				</div>
 			</div>
 		)
@@ -41,7 +41,7 @@ const Services = (props) => {
 		<div className='services'>
 			<div style={{zIdex: 999999}} className='section t'>
 				<div className='title-2'>OUR SERVICES</div>
-				<div className='title-3 short'>
+				<div className='p'>
 					Our mission is to deliver cleaner energy & sustain
 					Nigeria's energy needs as we transition to Net Zero.
 				</div>

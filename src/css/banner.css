@@ -18,7 +18,11 @@
 
 @media (max-width: 768px) {
 	.bannerHeader {
-		font-size: 4rem;
+		font-size: 2rem;
+		top: 35vh;
+	}
+	.small-font {
+		padding-left: 0;
 	}
 	.bannerContainer {
 		height: 60vh;

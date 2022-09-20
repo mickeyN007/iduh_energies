@@ -24,8 +24,8 @@ const Home = () => {
 
 			<div ref={ref} className='bannerContainer'>
 				<div className='bannerHeader'>
-					<div style={{fontFamily: 'Antipasto'}}>Discover Our Energy</div>
-					<div style={{fontFamily: 'Antipasto'}}>For The New Age</div>
+					<div style={{fontWeight: 'bold'}}>Discover Our Energy</div>
+					<div style={{fontWeight: 'bold'}}>For The New Age</div>
 					<div className='small-font'>Iduh Energies is meeting worldwide demand for energy while preparing for the future</div>
 				</div>
 				<img src={bg1} className='img' style={styles.img} />
@@ -35,7 +35,7 @@ const Home = () => {
 				<div className='title-2'>OUR EXPERTISE</div>
 				<div className='col-2'>
 					<div className='col-2-a'>
-						<div className='title-3' style={{paddingBottom: '2rem'}}>
+						<div className='title-3'>
 							Why People Choose Us
 						</div>
 						<div className='p'>
@@ -52,7 +52,7 @@ const Home = () => {
 			<div className='section'>
 				<div className='col-2'>
 					<div className='col-2-a'>
-						<div className='title-3' style={{paddingBottom: '2rem'}}>
+						<div className='title-3'>
 							Iduh Energies is a forward thinking company
 						</div>
 						<div className='p'>

@@ -27,14 +27,13 @@
 	display: flex;
 	flex-direction: column;
 	padding-bottom: 80px;
-	text-align: center;
 }
 
 .footer-icon {
 	background-Color: var(--orange);
-	height: 50px;
-	width: 50px;
-	border-radius: 25px;
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
 	margin-right: 15px;
 	display: flex;
 	align-items: center;
@@ -161,11 +160,11 @@
 
 .social-icons {
 	display: flex;
-	color: white;
 }
 
 .social-icons > a{
   display: block;
+	color: white;
 }
 
 .social-icons > a > i{
@@ -193,5 +192,50 @@
 	.sub-header {
 		padding-top: 3vh;
 	}
+	.col {
+		padding-bottom: 0;
+	}
+	.input-txt {
+		width: 80vw;
+		height: 3vh;
+		padding: .8rem;
+		margin-bottom: 2vh;
+		border-radius: 5px;
+	}
+
+	.input-txt-sm {
+		width: 80vw;
+		height: 2vh;
+		padding: .4rem;
+		margin-bottom: 2vh;
+		border-radius: 5px;
+	}
+	.input-txt::placeholder, .input-txt-sm::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: var(--orange);
+		opacity: 1; /* Firefox */
+		font-size: .3rem;
+	}
+
+	.input-tx:-ms-input-placeholder, .input-txt-sm:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: var(--orange);
+		font-size: .3rem;
+	}
+
+	.input-txt::-ms-input-placeholder, .input-txt-sm::-ms-input-placeholder { /* Microsoft Edge */
+		color: var(--orange);
+		font-size: .8rem;
+	}
+	.footer-copyright {
+		font-size: .7rem;
+	}
+	.footer-info {
+		font-size: 1rem;
+		padding: .25rem;
+		font-weight: 500;
+	}
+	.footer img {
+		right:  -10%;
+	}
+
 
 }

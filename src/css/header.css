@@ -72,13 +72,17 @@
 	.h-container {
 		display: flex;
 		margin: auto;
-		height: 8vh;
+		height: 10vh;
 		align-items: center;
 		justify-content: space-between;
 	}
 
 	.h-subCon {
 		width: 80vw;
+		display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
 	}
 
 	.links {

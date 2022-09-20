@@ -1,17 +1,25 @@
 .services {
 	position: relative;
 }
-
 .service {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 .service-image {
 	width: 200px;
+	padding-bottom: 1rem;
+}
+.service-info {
+	text-align: center;
+}
+.service-name {
+	font-size: .5rem;
+	font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
 	.service-image {
-		width: 30px;
+		width: 40px;
 	}
 }

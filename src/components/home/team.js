@@ -7,12 +7,12 @@ import { mySettings } from './../../settings.js'
 const Team = (props) => {
 	const teamsArr = [
 		{
-			name: "Chief Peter E Iduh",
+			name: "Chief Peter E. Iduh",
 			title: "Founder and Chairman Emeritus",
 			img: require('../../images/avatar.jpg')
 		},
 		{
-			name: "Samuel Iduh",
+			name: "Samuel E. Iduh",
 			title: "Chairman and CEO",
 			img: require('../../images/avatar.jpg')
 		}
@@ -21,9 +21,6 @@ const Team = (props) => {
 		const { name, title, img } = team
 		return (
 			<div className='team-member' key={i}>
-				<div className='team-image'>
-					<img src={img} className='img' />
-				</div>
 				<div className='team-info'>
 					<div className='team-name'>{name}</div>
 					<div className='team-title'>{title}</div>

@@ -25,7 +25,8 @@ export default class Footer extends Component {
 	render() {
 		const addy = `https://maps.google.com/?q=1200 Pennsylvania Ave SE, Washington, District of Columbia, 20003`
 		const { email, emailF } = this.state
-		let date = new Date().getFullYear()
+		let tmpDate = new Date().getFullYear()
+		let date = `2012-${tmpDate}`
 		return (
 			<div>
 				<div className='footer'>
@@ -78,7 +79,7 @@ export default class Footer extends Component {
 							</div>
 							<div className="footer-copyright" style={{color: 'white'}}>
 								<p>
-										Copyright {date} - Iduh Energies - All Rights Reserved
+										Copyright from {date} - Iduh Energies - All Rights Reserved
 								</p>
 							</div>
 						</div>
@@ -86,7 +87,7 @@ export default class Footer extends Component {
 							<div className='sub-header'>Contact Us</div>
 							<div style={{display: 'flex', flexDirection: 'row', marginTop: '5%'}}>
 								<div className='footer-icon'>
-									<IconContext.Provider value={{fontWeight: 'bold',  size: '1.5em', color: "black" }}>
+									<IconContext.Provider value={{fontWeight: 'bold',  size: '1em', color: "black" }}>
 										<MdEmail />
 									</IconContext.Provider>
 								</div>
@@ -94,7 +95,7 @@ export default class Footer extends Component {
 							</div>
 								<div style={{display: 'flex', flexDirection: 'row', marginTop: '5%'}}>
 								<div className='footer-icon'>
-									<IconContext.Provider value={{fontWeight: 'bold',  size: '1.5em', color: "black" }}>
+									<IconContext.Provider value={{fontWeight: 'bold',  size: '1em', color: "black" }}>
 										<FaPhone />
 									</IconContext.Provider>
 								</div>
@@ -102,7 +103,7 @@ export default class Footer extends Component {
 							</div>
 							<div style={{display: 'flex', flexDirection: 'row', marginTop: '5%'}}>
 								<div className='footer-icon'>
-									<IconContext.Provider value={{fontWeight: 'bold',  size: '1.5em', color: "black" }}>
+									<IconContext.Provider value={{fontWeight: 'bold',  size: '1em', color: "black" }}>
 										<FaLocationArrow />
 									</IconContext.Provider>
 								</div>
