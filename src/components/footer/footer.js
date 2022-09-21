@@ -54,7 +54,7 @@ export default class Footer extends Component {
 					<div style={styles.imgg}></div>
 				</div>
 				<div className='f-main'>
-					<div className='f-container'>
+					<div className='f-container desktop'>
 						<div className='col'>
 							<Link to='/' className="footer-logo">
 								<img src={logo} style={{height: '100%', width: '100%', objectFit: 'contain'}}/>
@@ -93,14 +93,6 @@ export default class Footer extends Component {
 								</div>
 								<a className='footer-info white' href="mailto:info@iduhenergies.com">info@iduhenergies.com</a>
 							</div>
-								<div style={{display: 'flex', flexDirection: 'row', marginTop: '5%'}}>
-								<div className='footer-icon'>
-									<IconContext.Provider value={{fontWeight: 'bold',  size: '1em', color: "black" }}>
-										<FaPhone />
-									</IconContext.Provider>
-								</div>
-								<a className='footer-info white' href="tel:5551234567" >08123456789</a>
-							</div>
 							<div style={{display: 'flex', flexDirection: 'row', marginTop: '5%'}}>
 								<div className='footer-icon'>
 									<IconContext.Provider value={{fontWeight: 'bold',  size: '1em', color: "black" }}>
@@ -124,6 +116,74 @@ export default class Footer extends Component {
 								<div className='btn btn-sm btn-label-sm' onClick={this.subscribe.bind(this)}>
 									SUBSCRIBE
 								</div>
+							</div>
+						</div>
+					</div>
+
+					<div className='f-container mobile'>
+						<div className='col footer-contact'>
+							<div className='sub-header'>Contact Us</div>
+							<div style={{display: 'flex', flexDirection: 'row', marginTop: '5%'}}>
+								<div className='footer-icon'>
+									<IconContext.Provider value={{fontWeight: 'bold',  size: '1em', color: "black" }}>
+										<MdEmail />
+									</IconContext.Provider>
+								</div>
+								<a className='footer-info white' href="mailto:info@iduhenergies.com">info@iduhenergies.com</a>
+							</div>
+							<div style={{display: 'flex', flexDirection: 'row', marginTop: '5%'}}>
+								<div className='footer-icon'>
+									<IconContext.Provider value={{fontWeight: 'bold',  size: '1em', color: "black" }}>
+										<FaLocationArrow />
+									</IconContext.Provider>
+								</div>
+								<a className='footer-info white' href="mailto:info@houseofhairs.com">Abuja, Nigeria</a>
+							</div>
+						</div>
+
+						<div className='footer-col'>
+							<div className='sub-header'>Subscribe</div>
+							<div className='subscribe-form'>
+								<input
+									className='input-txt-sm title-1a'
+									type="text"
+									style={{color: 'black'}}
+									onChange={(e) => this.setState({emailF: e.target.value})}
+									value={emailF}
+									placeholder='Enter your email'
+								/>
+								<div className='btn btn-sm btn-label-sm' onClick={this.subscribe.bind(this)}>
+									SUBSCRIBE
+								</div>
+							</div>
+						</div>
+
+						<div className='col'>
+							<Link to='/' className="footer-logo">
+								<img src={logo} style={{height: '100%', width: '100%', objectFit: 'contain'}}/>
+							</Link>
+							<div className='footer-mission'>
+								Our mission is to deliver cleaner energy & sustain
+								Nigeria's energy needs as we transition to Net Zero.
+							</div>
+							<div className="social-icons">
+								<a href="#" className="link">
+										<i className="fab fa-facebook-f fa-md"></i>
+								</a>
+								<a href="#" className="link">
+										<i className="fab fa-twitter fa-md"></i>
+								</a>
+								<a href="#" className="link">
+										<i className="fab fa-instagram fa-md"></i>
+								</a>
+								<a href="#" className="link">
+										<i className="fab fa-linkedin fa-md"></i>
+								</a>
+							</div>
+							<div className="footer-copyright" style={{color: 'white'}}>
+								<p>
+										Copyright from {date} - Iduh Energies - All Rights Reserved
+								</p>
 							</div>
 						</div>
 					</div>

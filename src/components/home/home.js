@@ -42,19 +42,6 @@ const Home = () => {
 							We develop innovative, efficient and sustainable exploration and
 							production solutions that respond to our future energy challenges.
 						</div>
-					</div>
-					<div className='col-2-b'>
-						<img src={trust} className='img' />
-					</div>
-				</div>
-			</div>
-
-			<div className='section'>
-				<div className='col-2'>
-					<div className='col-2-a'>
-						<div className='title-3'>
-							Iduh Energies is a forward thinking company
-						</div>
 						<div className='p'>
 							We help companies create and improve
 							industry products through long lasting and
@@ -62,7 +49,7 @@ const Home = () => {
 						</div>
 					</div>
 					<div className='col-2-b'>
-						<img src={engineer} className='img' />
+						<img src={trust} className='img' />
 					</div>
 				</div>
 			</div>

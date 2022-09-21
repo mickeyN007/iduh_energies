@@ -40,8 +40,9 @@ export default class Header extends Component {
 				</div>
 				{this.state.showMenu && <div className="linksB">
 					<Link to='/about' className="linkB">About Us</Link>
-					<Link to='/contact' className="linkB">Contact</Link>
-					<Link to='/plans' className="link">Plans</Link>
+					<Link to='/contact' className="linkB">PRICING</Link>
+					<Link to='/contact' className="linkB">OUR TEAM</Link>
+					<Link to='/plans' className="linkB">CONTACT US</Link>
 				</div>
 				}
 
@@ -59,7 +60,4 @@ export default class Header extends Component {
 }
 
 const styles = {
-
-
-
 }

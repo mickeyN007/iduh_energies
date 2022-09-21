@@ -30,7 +30,7 @@ const Team = (props) => {
 	})
 	return(
 		<div className='section'>
-			<div className='title-3'>Meet Our Team of Experts</div>
+			<div className='title-3' style={{textAlign: 'center'}}>Meet Our Team of Experts</div>
 			<div className='scroller'>{teams}</div>
 		</div>
 	)
