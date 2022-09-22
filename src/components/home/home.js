@@ -26,7 +26,9 @@ const Home = () => {
 				<div className='bannerHeader'>
 					<div style={{fontWeight: 'bold'}}>Discover Our Energy</div>
 					<div style={{fontWeight: 'bold'}}>For The New Age</div>
-					<div className='small-font'>Iduh Energies is meeting worldwide demand for energy while preparing for the future</div>
+					<div className='small-font'>
+						Iduh Energies is meeting worldwide demand for energy while preparing for the future.
+					</div>
 				</div>
 				<img src={bg1} className='img' style={styles.img} />
 			</div>

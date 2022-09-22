@@ -92,7 +92,7 @@ code {
 	font-size: 1.3rem;
 	font-weight: lighter;
 	line-height: 1.5rem;
-	padding-bottom: .5rem;
+	padding-bottom: 2.5rem;
 }
 
 
@@ -109,7 +109,7 @@ code {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	width: 25%;
+	width: 35%;
 	margin: auto;
 	color: white;
 }
@@ -119,7 +119,7 @@ code {
 }
 
 .col-2-b {
-	flex: 2
+	width: 30%;
 }
 
 .logoContainer {

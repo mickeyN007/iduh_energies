@@ -23,6 +23,7 @@
 	}
 	.small-font {
 		padding-left: 0;
+		font-size: 1rem;
 	}
 	.bannerContainer {
 		height: 60vh;

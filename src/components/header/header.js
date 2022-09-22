@@ -29,8 +29,8 @@ export default class Header extends Component {
 				</Link>
 				<div className="links">
 					<Link to='' className="link" style={color}>ABOUT US</Link>
-					<Link to='' className="link" style={color}>PRICING</Link>
 					<Link to='' className="link" style={color}>OUR TEAM</Link>
+					<Link to='' className="link" style={color}>CAREERS</Link>
 					<Link to='' className="link" style={color}>CONTACT US</Link>
 				</div>
 				<div className="menu-btn" onClick={this.toggleMenu.bind(this)}>
@@ -39,10 +39,10 @@ export default class Header extends Component {
 						<div className="stroke"></div>
 				</div>
 				{this.state.showMenu && <div className="linksB">
-					<Link to='/about' className="linkB">About Us</Link>
-					<Link to='/contact' className="linkB">PRICING</Link>
-					<Link to='/contact' className="linkB">OUR TEAM</Link>
-					<Link to='/plans' className="linkB">CONTACT US</Link>
+					<Link to='/about' className="linkB" style={color}>About Us</Link>
+					<Link to='/contact' className="linkB" style={color}>OUR TEAM</Link>
+					<Link to='' className="linkB" style={color}>CAREERS</Link>
+					<Link to='/plans' className="linkB" style={color}>CONTACT US</Link>
 				</div>
 				}
 

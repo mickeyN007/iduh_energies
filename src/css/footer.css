@@ -226,7 +226,7 @@
 	.input-txt::placeholder, .input-txt-sm::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 		color: var(--orange);
 		opacity: 1; /* Firefox */
-		font-size: .3rem;
+		font-size: .9rem;
 	}
 
 	.input-tx:-ms-input-placeholder, .input-txt-sm:-ms-input-placeholder { /* Internet Explorer 10-11 */
@@ -236,7 +236,7 @@
 
 	.input-txt::-ms-input-placeholder, .input-txt-sm::-ms-input-placeholder { /* Microsoft Edge */
 		color: var(--orange);
-		font-size: .8rem;
+		font-size: .5rem;
 	}
 	.footer-copyright {
 		font-size: .7rem;
